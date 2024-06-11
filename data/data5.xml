@@ -1,0 +1,6 @@
+<osm version="0.6" generator="CGImap 0.9.2 (2054223 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<node id="4052331291" visible="true" version="1" changeset="37726851" timestamp="2016-03-10T06:42:43Z" user="fahreza" uid="3497169" lat="-7.5524343" lon="110.8144577">
+<tag k="amenity" v="hospital" />
+<tag k="name" v="Rumah Sakit Brayat Minulya" />
+</node>
+</osm>
