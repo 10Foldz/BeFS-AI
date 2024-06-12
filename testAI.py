@@ -44,6 +44,9 @@ def main():
         G = parse_osm(file)
         graph = nx.compose(graph, G)
     
+    # file = "data/data1.xml"  # specify the file you want to check
+    # graph = parse_osm(file)
+    
     # Add coordinates to nodes
     total_nodes = len(graph.nodes())
     print(f"Total nodes in graph: {total_nodes}")
