@@ -131,7 +131,9 @@ def main():
             route = get_route(osrm_url, [(pos[node1][0], pos[node1][1]), (pos[node2][0], pos[node2][1])])
             folium.PolyLine(route, color=colors[i % len(colors)]).add_to(m)
         
-        for node in path:
+        folium.Marker(location=[pos[starting_hospital][1], pos[starting_hospital][0]], popup=hospital_info.get(starting_hospital, "Hospital"), icon=folium.Icon(color='red')).add_to(m)
+        
+        for node in path[1:]:
             folium.Marker(location=[pos[node][1], pos[node][0]], popup=hospital_info.get(node, "Hospital")).add_to(m)
         
         m.save("map.html")
